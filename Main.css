@@ -1,0 +1,112 @@
+body {
+    font-family: "Hiragino Maru Gothic ProN";
+    background-color: #f7f7f7;
+    margin: 0
+}
+
+
+
+.header {
+    height: 50px;
+    width: 100%;
+    background-color: rgba(135, 180, 223, 0.9);
+
+    /* positionプロパティをfixedに、topを0に指定してください */
+    position: fixed;
+    top: 0;
+    z-index: 10;
+
+
+    /* z-indexを10に指定してください */
+}
+
+.header p {
+    color: rgb(255, 255, 255);
+    padding-left: 30px;
+}
+
+.TOP {
+    height: 100px;
+    padding: 15px;
+    padding-top: 75px;
+    text-align: center;
+    color: #5f5d60;
+    font-size: 18px;
+
+
+}
+
+.one {
+    height: 100px;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    color: #5f5d60;
+
+
+
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+    background-color: rgba(135, 180, 223, 0.9);
+
+    position: absolute;
+    /* ←絶対位置 */
+    bottom: 0;
+
+}
+
+/* フッター固定のために全体をとってきて制限をかけてあげる */
+.footerFixed {
+    min-height: 100vh;
+    /* ←コンテンツの高さの最小値＝ブラウザの高さに指定 */
+    position: relative;
+    /* ←相対位置 */
+    padding-bottom: 60px;
+    /* ←フッターの高さを指定 */
+    box-sizing: border-box;
+    /* ↑ヘッダーやフッターを含むすべての要素の高さ＝min-height:100vhになるように指定 */
+}
+
+.footer p {
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.While {
+    height: 100%;
+
+}
+
+@media (max-width:980px) {
+
+    .TOP {
+        height: 300px;
+        padding: 15px;
+        padding-top: 175px;
+        text-align: center;
+        color: #5f5d60;
+        font-size: 28px;
+
+
+    }
+
+    .one {
+        height: 300px;
+        padding: 15px;
+        text-align: center;
+        font-size: 28px;
+        color: #5f5d60;
+
+
+
+    }
+
+
+
+}
